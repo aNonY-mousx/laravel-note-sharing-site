@@ -1,0 +1,48 @@
+#footer {background-color: rgb(46, 53, 59);
+		color:rgb(232,232,232);
+		font-size:13px;
+		}
+#footer a:hover{text-decoration: none;
+		}		
+
+#footer .row{padding:15px 50px; 
+		margin: 0px auto;
+		}
+
+#footer p {text-align: justify;
+		padding-bottom: 15px;
+		}
+
+.custom_hr {margin: 10px 0 20px 0;
+		}
+
+.custom_ul {padding-left:15px;
+		padding-bottom: 15px;
+		}
+
+.menu a:link{color:rgb(232,232,232);
+		}
+
+.menu a:hover{color:#23527c;
+		}
+
+.recent {list-style-type: none;
+		}
+
+.recent h5 {font-weight: bold;
+		}
+
+.contact {list-style-type: none; 
+		padding-left: 0px;
+		}
+
+.contact li{padding:4px 0px; 
+		}
+
+.contact span{padding-right:5px;
+		}
+
+.end {padding:15px 50px;
+	margin: 0px auto;
+	background-color: #262830;
+	}

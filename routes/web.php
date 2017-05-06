@@ -12,5 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Route::get('/user',function(){
+	return view('userprofile');
+});
+
+Route::get('/user0',function(){
+	return view('userprofile0');
 });

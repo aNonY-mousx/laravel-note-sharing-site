@@ -1,0 +1,157 @@
+
+body {
+  background: #E0E0E0;
+}
+
+.profile {
+  margin: 20px 0 0 0;
+  padding:20px;
+}
+
+/* Profile sidebar */
+.profile-sidebar {
+  padding: 20px 0 10px 0;
+  background: #fff;
+}
+
+.profile-userpic img {
+  display: block;
+  text-align: center;
+  float: none;
+  margin: 0 auto;
+  padding: 0 10% 0 10%;
+  height:80%;
+  width:80%;
+}
+
+.profile-usertitle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-usertitle-name {
+  color: #5a7391;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.profile-usertitle-job {
+  text-transform: uppercase;
+  color: #5b9bd1;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.profile-introduction {
+  /*text-align: center;*/
+  margin-top: 10px;
+  padding-left:10px ;
+  padding-right: 10px; 
+}
+   
+.profile-usermenu {
+  margin-top: 30px;
+}
+
+.profile-usermenu ul li {
+  border-bottom: 1px solid #f0f4f7;
+}
+
+.profile-usermenu ul li:last-child {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li a {
+  color: #93a3b5;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.profile-usermenu ul li a i {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.profile-usermenu ul li a:hover {
+  background-color: #fafcfd;
+  color: #90A4AE;
+}
+
+.profile-usermenu ul li.active {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li.active a {
+  color: #90A4AE;
+  background-color: #CEDEE7;
+  border-left: 2px solid #0288D1;
+  margin-left: -2px;
+}
+
+/* Profile Content */
+.profile-content {
+  padding: 20px;
+  background: #fff;
+  min-height: 460px;
+}
+
+
+/*for the Overview tab*/
+small {
+display: block;
+line-height: 1.428571429;
+color: #999;
+}
+
+.glyphicon {  margin-bottom: 10px;margin-right: 10px;}
+
+.fb-profile img.fb-image-lg{
+    z-index: 0;
+    width: 100%;  
+    margin-bottom: 1px;
+    height: 50%
+}
+
+.fb-image-profile
+{
+    margin: -135px 10px 0px 40px;
+    z-index: 9;
+    width: 35%; 
+}
+
+@media (max-width:768px)
+{
+    
+.fb-profile-text>h1{
+    font-weight: 700;
+    font-size:16px;
+}
+
+.fb-image-profile
+{
+    margin: -85px 10px 0px 20px;
+    z-index: 9;
+    width: 50%; 
+}
+}
+.img-wrapper {
+  position: relative;
+ }
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: left;
+}
+
+.img-overlay:before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 50%;
+}

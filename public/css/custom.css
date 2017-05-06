@@ -1,0 +1,109 @@
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+.input-group .form-control:not(:first-child):not(:last-child), .input-group-addon:not(:first-child):not(:last-child), .input-group-btn:not(:first-child):not(:last-child) {
+    border-radius: 0;
+}
+.search-section .form-control {
+    height: 52px;
+}
+
+.btn-search{
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-radius: 0;
+    padding: 15px 25px;
+    background-color: #0288D1;
+    border: 0px;
+    color: white;
+
+}
+.btn-search:hover
+{
+
+    background-color:#0277BD;
+    color:white;
+}
+.btn-search:active
+{
+
+    color: white;
+    background-color:#01579B;
+}
+
+@media only screen and (max-width: 768px) {
+    .search-section {
+		display: block;
+	}
+	.search-section button{
+		width: 100%;
+	}
+	.claim-container {
+		font-size: 20px;
+		display: none;
+	}
+}
+.cat
+{
+
+    background-color:#90A4AE;
+    color: white;
+
+}
+.cat:hover
+{
+
+    background-color: #90A4AE;
+    color: white;
+}
+.cat:focus
+{
+    color: white;
+}
+
+
+/*custom navbar*/
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color:white;
+}
+#custom-bootstrap-menu.navbar-default {
+    font-size: 15px;
+    background-color: rgba(38, 50, 56, 1);
+    border-bottom-width: 1px;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(38, 50, 56, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(227, 224, 224, 1);
+    background-color: rgba(248, 248, 248, 0);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(207, 203, 203, 1);
+    background-color: rgba(38, 50, 56, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #263238;
+    border-color:transparent;
+
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #263238;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #263238;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #263238;
+}
