@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="/css/footer.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet"> 
   <style type="text/css">
-  	.navbar-defaultt
+  	.navbar-default
     {
 
       background-color:#263238;
@@ -21,6 +21,7 @@
       color: white;
       margin-bottom:0px;
     }
+
     .navbar-nav
     {
 
@@ -60,6 +61,7 @@
       margin-right:  10px;
       margin-left: 10px;
     }
+
     .btn-default:hover
     {
 
@@ -121,7 +123,7 @@
     .fa-bars
     {
 
-      background-color: white;
+      color: white;
     }
     .needhelp
     {
@@ -193,17 +195,32 @@
     {
       background-color: black;
     }
+
+    .fa, .glyphicon 
+    {
+       margin-right: 10px;
+    }
+
   </style>
+  <script>
+        window.Laravel = {!! json_encode([
+            'csrfToken' => csrf_token(),
+        ]) !!};
+  </script>
+
   @section('css')
   @show
 </head>
+
 <body style="font-family: 'Open Sans', sans-serif;">
+
 <!-- NAVBAR -->
 <div id="custom-bootstrap-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header"><a class="navbar-brand" href="#">Site LOGO</a>
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
              <i class="fa fa-bars" aria-hidden="true"></i>
+             {{-- <span class="icon-bar"></span> --}}
             </button>
         </div>
         <div class="collapse navbar-collapse navbar-menubuilder">
@@ -219,10 +236,37 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#">Community <i class="fa fa-question-circle" aria-hidden="true"></i></a></li>
-              <button class="btn btn-default navbar-btn"><i class="fa fa-upload" aria-hidden="true"></i>
+              <button class="btn btn-default navbar-btn"><i class="fa fa-upload" aria-hidden="true"></i>Upload</button>
+              @if (Auth::guest())
+                <li class="dropdown">
+                  <button class="btn btn-default navbar-btn" data-toggle="dropdown"><i class="fa fa-user-circle" aria-hidden="true"></i> Sign in<b class="caret"></b></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="{{ route('login') }}"><i class="fa fa-sign-in" aria-hidden="true"></i>Login</a></li>
+                    <hr style="margin: 2px">
+                    <li><a href="{{ route('register') }}"><i class="fa fa-plus"></i>Register</a></li>
+                  </ul>
+                </li>
 
-              Upload</button>
-              <button class="btn btn-default navbar-btn"><i class="fa fa-user-circle" aria-hidden="true"></i> Sign in</button>
+              @else
+                              <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();"><i class="fa fa-sign-out" aria-hidden="true"></i>
+                                            Logout
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                        @endif
             </ul>
         </div>
          

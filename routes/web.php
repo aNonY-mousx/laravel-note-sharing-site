@@ -22,3 +22,6 @@ Route::get('/user',function(){
 Route::get('/user0',function(){
 	return view('userprofile0');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
