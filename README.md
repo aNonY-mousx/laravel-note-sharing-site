@@ -2,22 +2,28 @@
 Laravel powered note sharing site. You can share notes (download and /or upload ) notes from here 
 There is even a Q and As' section where u can ask questions/answer some maybe ? :)
 
-this is built on Laravel 5.4 framework 
+This is built on Laravel 5.4 framework. 
 
-This website is currently under development ..
+This website is currently under development ...
 
 
 ##  How to get it up and running.
 
-Make sure u have **_composer_** installed.      
-Clone this repository.  
+Make sure u have **_composer_** installed.   
+
+Clone this repository you can use this :   
+	
+		git clone https://github.com/aNonY-mousx/note-share.git
+	
+
 Now Make sure You are in the project  directory /.../note-share/ (via terminal or command prompt) then type this command:    
 	
 		composer install     
 	
 It will install all dependencies from composer.lock( this will create 'vendor' folder and download all packages).
 
-Now create a file named ".env" in ur project directory/./note-share/ . This file will contain database connection details and such. You can copy and paste the content of .env.example located in same directory. **(! Dont just simply rename that .env.example file to .env it is kept as refrence so that others can quickly set up their environment)** 
+Now create a file named ".env" in ur project directory/./note-share/ . This file will contain database connection details and such. You can copy and paste the content of .env.example located in same directory.   
+**(! Dont just simply rename that .env.example file to .env it is kept as refrence so that others can quickly set up their environment)**   
 After u copy and paste it to .env file make necessary changes like mysql connection details emails and other stuffs.   
 
 If u r using linux as a non root user u might have to change some permissions of ur project folder and /../note-share/storage folder   
@@ -63,6 +69,7 @@ For starting server type this command in terminal/prompt ( U must be in project 
 		php artisan serv
 
 
-Thats all !  =)    
->.<
+Thats all ! :+1:   
+:shipit:   
+	>.<
 
